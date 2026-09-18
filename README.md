@@ -21,3 +21,5 @@ A detailed User Guide is included in the installation package, or you can downlo
 ## 🛡️ License & Source
 This software is **proprietary** and provided as a free executable. The source code is not publicly available. 
 © 2026 Nisse-Sec Team. All rights reserved.
+
+> **Note:** The `Source code` files shown in the Releases section are GitHub's default snapshots (only containing this README). They do not contain the application's source code. The software is only distributed as an executable.
