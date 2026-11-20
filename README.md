@@ -1,27 +1,42 @@
 # WinSystemHarden (Free)
 
-**Offline System Hardening for Windows 10/11.**
+Free Windows hardening tool with one-click rollback. Windows 10 / 11.
 
-WinSystemHarden applies 29 hardening rules inspired by CIS Benchmarks and NSA guidelines. Disables high-risk services like SMBv1 and closes unnecessary ports. If anything breaks, one click puts it back.
+WinSystemHarden applies 33 hardening rules inspired by CIS Benchmarks and NSA guidelines. It blocks inbound traffic on high-risk ports, disables SMBv1 and other legacy protocols, and locks down services, accounts and permissions. If anything breaks, roll it back by batch.
 
 ## ✨ Key Features
-- **29 Hardening Rules:** Network, Service, System, Account, and Permission.
-- **Inspired by CIS & NSA:** Industry best practices, adapted for real-world use.
-- **One-Click Hardening:** Apply selected items in one click.
-- **One-Click Rollback:** Revert to any previous restore point.
-- **100% Offline:** No cloud, no telemetry, no data collection.
-- **Free Edition:** Completely free.
+
+- **33 hardening rules** across Network, Service, System, Account and Permission.
+- **Three plans**: Standard (24 rules), Deep (all 33), Custom (pick your own).
+- **One-click hardening**: apply every selected rule in a single run.
+- **Rollback by batch**: revert a batch and everything applied after it.
+- **Interrupted runs are recoverable**: if the app closes, crashes, or the machine reboots mid-batch, the next launch detects it and lets you resume or roll back.
+- **Inspired by CIS and NSA guidance**, adapted for real-world compatibility.
+- **No account, no telemetry.** The only network call is the manual Check Update button, which fetches a version string.
+- **Free, no license key.**
+
+Nine of the 33 rules are Deep-plan only and are marked in orange in the UI. They carry compatibility risk, so read the label before enabling them.
 
 ## 📥 Download
-Go to the [Releases](https://github.com/nissesec-team/winsystemharden/releases) page to get the latest version.
 
-> **Note:** Standard Windows installer. The wizard walks you through setup (no silent install). We'd rather you see exactly what's being applied to your system.
+Get the latest build from the [Releases](https://github.com/nissesec-team/winsystemharden/releases/latest) page.
 
-## 📖 User Guide
-Included in the installer, or grab the PDF from the [Releases](https://github.com/nissesec-team/winsystemharden/releases) page.
+The installer is a standard Windows wizard. There is no silent install, so you can see exactly what gets changed before it runs.
 
-## 🛡️ License & Source
-Proprietary, free to use. Source code isn't public.
+Requirements: Windows 10 or 11. .NET Framework 4.8 ships with both, nothing else to install.
+
+## 📘 User Guide
+
+The PDF is included in the installer and also attached to each release on the [Releases](https://github.com/nissesec-team/winsystemharden/releases/latest) page.
+
+## 🔐 Security
+
+Every release lists its SHA-256 and a VirusTotal report on the [release page](https://github.com/nissesec-team/winsystemharden/releases/latest). If the hash you compute doesn't match the value shown there, don't run the file.
+
+## ⚖️ License & Source
+
+Proprietary, free to use. The source code is not public.
+
+The files GitHub shows under "Source code" in Releases are default repository snapshots containing only this README. The application itself is distributed as an executable.
+
 © 2026 Nisse-Sec Team. All rights reserved.
-
-> The `Source code` files in Releases are GitHub's default snapshots (README only). No application code. The software is distributed as an executable.
